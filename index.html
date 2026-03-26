@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Tri Sutrisno</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #ff4d4d, #f9cb28);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-bg {
+            background: radial-gradient(circle at top right, #1e1b4b, #020617);
+        }
+
+        .project-card:hover .project-overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-card py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <h1 class="text-xl font-bold tracking-tighter">TRI <span class="text-red-500">SUTRISNO</span></h1>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#home" class="hover:text-red-400 transition">Beranda</a>
+                <a href="#about" class="hover:text-red-400 transition">Tentang</a>
+                <a href="#project" class="hover:text-red-400 transition">Proyek</a>
+                <a href="#contact" class="px-4 py-2 bg-red-600 rounded-full hover:bg-red-700 transition">Hubungi Saya</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg min-h-screen flex items-center pt-20">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <span class="px-4 py-1 rounded-full bg-red-500/10 text-red-500 text-sm font-semibold border border-red-500/20">
+                    Sistem Informasi Student
+                </span>
+                <h2 class="text-5xl md:text-7xl font-bold leading-tight">
+                    Membangun <span class="gradient-text">Solusi Digital</span> untuk Masa Depan.
+                </h2>
+                <p class="text-slate-400 text-lg max-w-lg">
+                    Halo! Saya Tri Sutrisno, mahasiswa Sistem Informasi dari Universitas Respati Indonesia yang berfokus pada pengembangan teknologi web modern dan analisis sistem.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#project" class="px-8 py-3 bg-white text-black font-bold rounded-lg hover:bg-slate-200 transition">
+                        Lihat Proyek
+                    </a>
+                    <a href="#about" class="px-8 py-3 border border-slate-700 rounded-lg hover:bg-white/5 transition">
+                        Profil Saya
+                    </a>
+                </div>
+            </div>
+            <div class="relative flex justify-center">
+                <!-- Decorative Circle -->
+                <div class="absolute w-72 h-72 bg-red-600 rounded-full filter blur-[100px] opacity-20 animate-pulse"></div>
+                <div class="z-10 glass-card p-8 rounded-2xl border-white/10 w-full max-w-sm">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Fullstack Dev</h4>
+                            <p class="text-xs text-slate-400">Web Specialist</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="h-2 bg-slate-800 rounded-full"><div class="h-2 bg-red-500 w-[90%] rounded-full"></div></div>
+                        <div class="h-2 bg-slate-800 rounded-full"><div class="h-2 bg-yellow-500 w-[85%] rounded-full"></div></div>
+                        <div class="h-2 bg-slate-800 rounded-full"><div class="h-2 bg-blue-500 w-[80%] rounded-full"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-slate-900">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h3 class="text-3xl font-bold mb-6 italic">"Adaptasi cepat adalah kunci inovasi."</h3>
+                    <div class="space-y-4 text-slate-300">
+                        <p>
+                            Saya memiliki kemampuan komunikasi yang baik dan sangat menguasai bidang teknologi terbaru. Sebagai mahasiswa <strong>Universitas Respati Indonesia</strong>, saya terbiasa menggabungkan teori sistem informasi dengan implementasi praktis.
+                        </p>
+                        <p>
+                            Saya mampu bekerja secara personal maupun dalam tim dengan efisiensi tinggi. Keunggulan saya terletak pada kemampuan beradaptasi di lingkungan baru tanpa kesulitan.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="p-6 glass-card rounded-xl text-center">
+                        <i class="fas fa-users text-3xl text-red-500 mb-4"></i>
+                        <h4 class="font-bold">Team Work</h4>
+                        <p class="text-xs text-slate-400 mt-2">Kolaborasi Efektif</p>
+                    </div>
+                    <div class="p-6 glass-card rounded-xl text-center">
+                        <i class="fas fa-bolt text-3xl text-yellow-500 mb-4"></i>
+                        <h4 class="font-bold">Fast Learner</h4>
+                        <p class="text-xs text-slate-400 mt-2">Adaptasi Cepat</p>
+                    </div>
+                    <div class="p-6 glass-card rounded-xl text-center">
+                        <i class="fas fa-comments text-3xl text-blue-500 mb-4"></i>
+                        <h4 class="font-bold">Communication</h4>
+                        <p class="text-xs text-slate-400 mt-2">Penyampaian Jelas</p>
+                    </div>
+                    <div class="p-6 glass-card rounded-xl text-center">
+                        <i class="fas fa-microchip text-3xl text-green-500 mb-4"></i>
+                        <h4 class="font-bold">Tech Savvy</h4>
+                        <p class="text-xs text-slate-400 mt-2">Up-to-date</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="project" class="py-24 bg-slate-950">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Showcase Utama</h2>
+                <div class="h-1 w-20 bg-red-600 mx-auto"></div>
+                <p class="text-slate-400 mt-4">Aplikasi pemesanan makanan dengan integrasi sistem pembayaran digital.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="group relative overflow-hidden rounded-2xl bg-slate-900 border border-white/5 project-card">
+                    <img src="https://raw.githubusercontent.com/username/repo/main/image1.jpg" onerror="this.src='https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80'" alt="Landing Page" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                    <div class="p-6">
+                        <h4 class="font-bold text-lg">Landing Page: Warung Seblak</h4>
+                        <p class="text-slate-400 text-sm mt-2">Desain antarmuka modern dengan katalog menu yang dinamis.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="group relative overflow-hidden rounded-2xl bg-slate-900 border border-white/5 project-card">
+                    <img src="https://raw.githubusercontent.com/username/repo/main/image2.jpg" onerror="this.src='https://images.unsplash.com/photo-1556742044-3c52d6e88c62?auto=format&fit=crop&w=800&q=80'" alt="Checkout System" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                    <div class="p-6">
+                        <h4 class="font-bold text-lg">Sistem Detail Pesanan</h4>
+                        <p class="text-slate-400 text-sm mt-2">Logika perhitungan keranjang belanja dan detail catatan pesanan.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="group relative overflow-hidden rounded-2xl bg-slate-900 border border-white/5 project-card">
+                    <img src="https://raw.githubusercontent.com/username/repo/main/image3.jpg" onerror="this.src='https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=800&q=80'" alt="QRIS Integration" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                    <div class="p-6">
+                        <h4 class="font-bold text-lg">Integrasi QRIS & Gateway</h4>
+                        <p class="text-slate-400 text-sm mt-2">Implementasi gerbang pembayaran otomatis menggunakan QRIS.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 p-8 glass-card rounded-3xl border-red-500/20 text-center">
+                <h4 class="text-xl font-bold mb-4">Ingin melihat kodenya?</h4>
+                <p class="text-slate-400 mb-6">Proyek ini dikembangkan menggunakan JavaScript modern dengan fokus pada keamanan transaksi.</p>
+                <a href="#" class="inline-flex items-center space-x-2 text-red-500 font-bold hover:text-red-400">
+                    <i class="fab fa-github"></i>
+                    <span>Kunjungi GitHub Repositori</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="py-12 border-t border-white/5">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-2xl font-bold mb-4">Mari Berkolaborasi</h3>
+            <p class="text-slate-400 mb-8">Tri Sutrisno | tri.sutrisno@email.com</p>
+            <div class="flex justify-center space-x-6 text-2xl">
+                <a href="#" class="text-slate-400 hover:text-white transition"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-slate-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-slate-400 hover:text-white transition"><i class="fab fa-github"></i></a>
+            </div>
+            <p class="text-slate-600 text-xs mt-12">© 2024 Tri Sutrisno. Universitas Respati Indonesia.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
