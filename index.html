@@ -27,6 +27,9 @@
         .project-img-wrapper { height: 220px; display: flex; align-items: center; justify-content: center; background: #0f172a; overflow: hidden; }
         .project-img-wrapper img { max-width: 100%; max-height: 100%; object-fit: contain; transition: transform 0.5s; }
         .project-img-wrapper:hover img { transform: scale(1.05); }
+        
+        /* Custom adjustment for experience images to prevent wrapping */
+        .exp-grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
     </style>
 </head>
 <body class="bg-slate-950 text-white overflow-x-hidden">
@@ -187,15 +190,15 @@
                 </p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-10">
+            <div class="grid md:grid-cols-3 gap-8">
                 <!-- Kolom 1: Manajemen Event (1 Foto) -->
                 <div class="space-y-6 reveal-bottom">
                     <div class="flex items-center space-x-4 mb-2">
                         <div class="w-10 h-10 bg-red-600/20 rounded-xl flex items-center justify-center text-red-500 shadow-inner"><i class="fas fa-bullseye"></i></div>
                         <h4 class="font-bold text-xl tracking-tight">Manajemen Event</h4>
                     </div>
-                    <div class="glass-card p-2.5 rounded-3xl overflow-hidden">
-                        <img src="https://raw.githubusercontent.com/sailorr-ui/Tri-Portofolio/refs/heads/main/KegiatanPesertaPanahan.jpeg" alt="Kegiatan" class="img-contain">
+                    <div class="glass-card p-2 rounded-2xl overflow-hidden aspect-[3/4]">
+                        <img src="https://raw.githubusercontent.com/sailorr-ui/Tri-Portofolio/refs/heads/main/KegiatanPesertaPanahan.jpeg" alt="Kegiatan" class="w-full h-full object-cover">
                     </div>
                     <p class="text-slate-400 text-sm leading-relaxed px-2">Memastikan alur kegiatan berjalan lancar dan kondusif bagi seluruh peserta.</p>
                 </div>
@@ -207,33 +210,30 @@
                         <h4 class="font-bold text-xl tracking-tight">Akurasi Data</h4>
                     </div>
                     <!-- Grid 2 Kolom untuk Foto -->
-                    <div class="grid grid-cols-2 gap-3">
-                        <div class="glass-card p-2 rounded-2xl overflow-hidden h-full">
+                    <div class="exp-grid-2">
+                        <div class="glass-card p-1.5 rounded-2xl overflow-hidden aspect-[3/4]">
                             <img src="https://raw.githubusercontent.com/sailorr-ui/Tri-Portofolio/refs/heads/main/FotoPencatatanSkors1.jpeg" alt="Skor 1" class="w-full h-full object-cover rounded-xl">
                         </div>
-                        <div class="glass-card p-2 rounded-2xl overflow-hidden h-full">
+                        <div class="glass-card p-1.5 rounded-2xl overflow-hidden aspect-[3/4]">
                             <img src="https://raw.githubusercontent.com/sailorr-ui/Tri-Portofolio/refs/heads/main/FotoPencatatanSkors2.jpeg" alt="Skor 2" class="w-full h-full object-cover rounded-xl">
                         </div>
                     </div>
                     <p class="text-slate-400 text-sm leading-relaxed px-2">Pencatatan skor digital dan manual dengan tingkat ketelitian tinggi.</p>
                 </div>
 
-                <!-- Kolom 3: Interaksi Sosial (3 Foto Menyamping) -->
+                <!-- Kolom 3: Interaksi Sosial (2 Foto Menyamping) -->
                 <div class="space-y-6 reveal-bottom" style="transition-delay: 300ms;">
                     <div class="flex items-center space-x-4 mb-2">
                         <div class="w-10 h-10 bg-blue-600/20 rounded-xl flex items-center justify-center text-blue-500 shadow-inner"><i class="fas fa-user-friends"></i></div>
                         <h4 class="font-bold text-xl tracking-tight">Interaksi Sosial</h4>
                     </div>
-                    <!-- Grid 3 Kolom untuk Foto -->
-                    <div class="grid grid-cols-3 gap-2">
-                        <div class="glass-card p-1.5 rounded-xl overflow-hidden aspect-square">
-                            <img src="https://raw.githubusercontent.com/sailorr-ui/Tri-Portofolio/refs/heads/main/FotoKegiatan3.jpeg" alt="Tim 3" class="w-full h-full object-cover rounded-lg">
+                    <!-- Grid 2 Kolom untuk Foto sesuai update terbaru -->
+                    <div class="exp-grid-2">
+                        <div class="glass-card p-1.5 rounded-2xl overflow-hidden aspect-[3/4]">
+                            <img src="https://raw.githubusercontent.com/sailorr-ui/Tri-Portofolio/refs/heads/main/FotoKegiatan3.jpeg" alt="Tim 3" class="w-full h-full object-cover rounded-xl">
                         </div>
-                        <div class="glass-card p-1.5 rounded-xl overflow-hidden aspect-square">
-                            <img src="https://raw.githubusercontent.com/sailorr-ui/Tri-Portofolio/refs/heads/main/FotoKegiatan2.jpeg" alt="Tim 2" class="w-full h-full object-cover rounded-lg">
-                        </div>
-                        <div class="glass-card p-1.5 rounded-xl overflow-hidden aspect-square">
-                            <img src="https://raw.githubusercontent.com/sailorr-ui/Tri-Portofolio/refs/heads/main/FotoKegiatan1.jpeg" alt="Tim 1" class="w-full h-full object-cover rounded-lg">
+                        <div class="glass-card p-1.5 rounded-2xl overflow-hidden aspect-[3/4]">
+                            <img src="https://raw.githubusercontent.com/sailorr-ui/Tri-Portofolio/refs/heads/main/FotoKegiatan2.jpeg" alt="Tim 2" class="w-full h-full object-cover rounded-xl">
                         </div>
                     </div>
                     <p class="text-slate-400 text-sm leading-relaxed px-2">Membangun komunikasi aktif dan kerjasama tim di lingkungan kerja.</p>
